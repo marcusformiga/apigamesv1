@@ -65,11 +65,37 @@ EXEMPLO DE RESPOSTA:
 RESPOSTA DE FALHA - status 400 (vai retornar um array vazio)
 REQUISIÇÃO GET http://localhost:3001/game/id (precisa informar um id como parametro de rota)
 RESPOSTA DE SUCESSO - status 200 (se o id for encontrado vai retornar o jogo com id informado)
+EXEMPLO DE RESPOTA:
+```
+{
+    "id": "9c7fecf5-cc0b-4a0d-9349-55ad21673352",
+    "name": "Mortal kombat",
+    "price": "150.00",
+    "year": 2021,
+    "created_at": "2021-07-13T12:00:05.745Z",
+    "updated_at": "2021-07-13T12:00:05.745Z"
+}
+```
 RESPOSTA DE FALHA -  status 404 (se o id não foi encontrado vai retornar uma mensagem dizendo que o id não foi encontrado)
 REQUISIÇÃO POST http://localhost:3001/game (informar os parametros via body, name, price, year)
 RESPOSTA DE SUCESSO - status 201 (retorna o jogo criado)
+EXEMPLO DE RESPOSTA:
+```
+{
+    "name": "fifa21",
+    "price": 150,
+    "year": 2020,
+    "id": "b6066e8f-8888-48fa-bc53-aec01c6962b1",
+    "created_at": "2021-07-13T13:26:04.858Z",
+    "updated_at": "2021-07-13T13:26:04.858Z"
+}
+```
 REQUISIÇÃO DELETE http://localhost:3001/game/id (precisa informar um id como parametro de rota)
 RESPOSTA DE SUCESSO - status 201 (retorna um array vazio)
+EXEMPLO DE RESPOSTA:
+```
+[]
+```
 RESPOSTA DE FALHA - status 404 (retorna uma mensagem dizendo que o id informado não existe)
 
 
