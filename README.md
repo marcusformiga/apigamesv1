@@ -4,7 +4,7 @@
 #### Para rodar este pequeno projeto e testar as rotas é necessário ter o postgres na sua maquina e clonar este projeto, na pasta raiz basta instalar as dependencias e rodar o projeto com o comando yarn dev
 ##### Está api está numa versão 1.0, falta implementar algumas funcionalidades como testes automatizados, autenticação nas rotas e outras coisas para ser melhorada
 
-##Endpoints:
+## Endpoints:
 GET http://localhost:3001/game (faz uma busca de todos os jogos cadastrados no banco de dados)
 GET http://localhost:3001/game/id (faz uma busca por id do jogo, cada jogo tem id unico, caso seja encontrado o jogo vai retornar os dados no formato json)
 POST http://localhost:3001/game (cria um jogo, para criar um jogo devemos informar o seu nome, seu preço e o seu ano de lançamento, ao criar o jogo retorna o jogo)
